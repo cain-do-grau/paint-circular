@@ -21,8 +21,8 @@ function myMouseMove(e) {
     if (mouseEvent == "mouseDown") {
         ctx.beginPath();
         ctx.strokeStyle = color; //A propriedade strokeStyle define ou retorna a cor, o gradiente ou o padrão usado para traçados.
-        ctx.lineWidth = larguraLinha; //A propriedade lineWidth define ou retorna a largura da linha atual, em pixels.
-        ctx.arc(mouseXatual, mouseYatual,40, 0, 2*Math.PI);
+        ctx.lineWidth = 3; //A propriedade lineWidth define ou retorna a largura da linha atual, em pixels.
+        ctx.arc(mouseXatual, mouseYatual,larguraLinha, 0, 2*Math.PI);
         ctx.stroke();
     }
 
@@ -66,8 +66,8 @@ function myTouchMove(e) {
     mouseYtouchAtual = e.touches[0].clientY - canvas.offsetTop;
     ctx.beginPath();
     ctx.strokeStyle = color; //A propriedade strokeStyle define ou retorna a cor, o gradiente ou o padrão usado para traçados.
-    ctx.lineWidth = larguraLinha; //A propriedade lineWidth define ou retorna a largura da linha atual, em pixels.
-    ctx.arc(mouseX, mouseY,40, 0, 2*Math.PI);
+    ctx.lineWidth = 3; //A propriedade lineWidth define ou retorna a largura da linha atual, em pixels.
+    ctx.arc(mouseXtouchAtual, mouseYtouchAtual,larguraLinha, 0, 2*Math.PI);
     ctx.stroke();
 
     mouseXtouchFinal = mouseXtouchAtual;
