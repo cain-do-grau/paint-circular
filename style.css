@@ -1,0 +1,28 @@
+#fundo {
+    background-image: url("https://cain-do-grau.github.io/olinpic/Queixo-grande-Figura-Aciton-m-Dos-Desenhos-Animados-Padr-o-Animal-3D-m-de-Geladeira-Adesivos.jpg_640x640.jpg");
+    background-position: center;
+    text-align: center;
+    color:black
+}
+
+#titulo {
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+}
+
+#myCanvas {
+    border-width: 10px;
+    background-color: white;
+    border-style: ridge;
+}
+
+#btnLimpar {
+    background-color: #11016c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input {
+    margin-right: 20px;
+}
